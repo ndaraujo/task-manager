@@ -39,7 +39,7 @@ Esta é uma API RESTful construída com Node.js, Express e PostgreSQL que permit
 ## Uso
 
 - Cria uma nova tarefa
-    `POST /tasks
+    `POST /tasks`
 
     Body: 
     ```json 
@@ -49,13 +49,13 @@ Esta é uma API RESTful construída com Node.js, Express e PostgreSQL que permit
         }
 
 - Listar todas as tarefas
-    `GET /tasks
+    `GET /tasks`
 
 - Buscar tarefa por ID
-    `GET /tasks/:id
+    `GET /tasks/:id`
 
 - Atualizar tarefa por ID
-    `PUT /tasks/:id
+    `PUT /tasks/:id`
 
     Body:
     ```json
@@ -66,7 +66,7 @@ Esta é uma API RESTful construída com Node.js, Express e PostgreSQL que permit
         }
 
 - Deletar tarefa por ID
-    `DELETE /tasks/:id
+    `DELETE /tasks/:id`
 
 ## Testes
 
