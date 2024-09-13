@@ -14,70 +14,76 @@ Esta é uma API RESTful construída com Node.js, Express e PostgreSQL que permit
    ```bash
    git clone https://github.com/seu-usuario/task-manager.git
    cd task-manager
+   ```
 
 2. Instale as dependências:
 
-    bash
-  
+    ```bash
     npm install
+    ```
 
 3. Configure o banco de dados no arquivo .env:
 
-    makefile
-
+    ```makefile
     DB_NAME=taskmanager
     DB_USER=postgres
     DB_PASS=sua-senha
     DB_HOST=localhost
-    DB_PORT=5432        
+    DB_PORT=5432 
+    ```        
 
 4. Execute as migrações e inicialize o banco de dados:
 
-    bash
-    npx sequelize-cli db:migrate
+    ```bash
+    npx sequelize-cli db:migrate 
+    ```
 
 5. Inicie o servidor:
 
-    bash
-    npm start       
+        ```bash
+        npm start
+        ```
 
-    # Uso
+## Uso
     
-    ## Criar uma nova tarefa
+    - Criar uma nova tarefa
     POST /tasks
 
     Body:
 
-        json
-    {
-        "title": "Título da tarefa",
-        "description": "Descrição da tarefa"
+        ```json
+        {
+            "title": "Título da tarefa",
+            "description": "Descrição da tarefa"
         }
+        ```
 
 
-    ## Listar todas as tarefas
+    - Listar todas as tarefas
     GET /tasks
 
-    ## Buscar tarefa por ID
+    - Buscar tarefa por ID
     GET /tasks/:id
 
-    ## Atualizar tarefa por ID
+    - Atualizar tarefa por ID
     PUT /tasks/:id
 
-    Body: json
-
-    {
+    Body: 
+    
+```json
+        {
         "title": "Novo título",
         "description": "Nova descrição",
         "status": true
-    }
+        } 
+```
 
-    ## Deletar tarefa por ID
+    - Deletar tarefa por ID
     DELETE /tasks/:id
 
-    ## Testes:
+## Testes:
 
     Para testar os endpoints, você pode usar ferramentas como Postman ou Insomnia. Além disso, a API foi protegida contra injeções de SQL.
 
     ## Contribuição
-    Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request.
+    Contribuições são bem-vindas. Por favor, abra uma issue ou envie um pull request.
